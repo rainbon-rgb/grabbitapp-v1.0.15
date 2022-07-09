@@ -1,0 +1,59 @@
+import 'dart:ui';
+import 'package:flutter/material.dart';
+
+class ColorConstant {
+  static Color gray700 = fromHex('#666666');
+
+  static Color black900A2 = fromHex('#a2040404');
+
+  static Color whiteA7006d = fromHex('#6dffffff');
+
+  static Color amber400 = fromHex('#ffd223');
+
+  static Color amber401 = fromHex('#ffcc18');
+
+  static Color black900Null = fromHex('#000000');
+
+  static Color lime900 = fromHex('#a48300');
+
+  static Color bluegray100 = fromHex('#d9d9d9');
+
+  static Color black9003f = fromHex('#3f000000');
+
+  static Color gray200 = fromHex('#efefef');
+
+  static Color amberA100 = fromHex('#fee16f');
+
+  static Color black900A3 = fromHex('#a2000000');
+
+  static Color gray201 = fromHex('#ececec');
+
+  static Color gray300 = fromHex('#e6e3e3');
+
+  static Color black9001e = fromHex('#1e000000');
+
+  static Color orange50 = fromHex('#fff9e2');
+
+  static Color black90099 = fromHex('#99000000');
+
+  static Color black90060 = fromHex('#60000000');
+
+  static Color amberA10033 = fromHex('#33fee16f');
+
+  static Color bluegray400 = fromHex('#888888');
+
+  static Color bluegray101 = fromHex('#d4d7de');
+
+  static Color whiteA700 = fromHex('#ffffff');
+
+  static Color whiteA7007c = fromHex('#7cffffff');
+
+  static Color blue70019 = fromHex('#191b7cd6');
+
+  static Color fromHex(String hexString) {
+    final buffer = StringBuffer();
+    if (hexString.length == 6 || hexString.length == 7) buffer.write('ff');
+    buffer.write(hexString.replaceFirst('#', ''));
+    return Color(int.parse(buffer.toString(), radix: 16));
+  }
+}
