@@ -577,7 +577,6 @@ class EditDetailsScreen extends GetWidget<EditDetailsController> {
   }
 
   onTapBtnDone() {
-// ignore: todo
-// TODO: implement Actions
+    Get.toNamed(AppRoutes.homepageScreen);
   }
 }

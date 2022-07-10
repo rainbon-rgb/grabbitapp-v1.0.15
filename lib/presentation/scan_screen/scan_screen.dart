@@ -111,7 +111,6 @@ class ScanScreen extends GetWidget<ScanController> {
   }
 
   onTapBtnNext() {
-// ignore: todo
-// TODO: implement Actions
+    Get.toNamed(AppRoutes.rabbitGeneratedInfoScreen);
   }
 }
